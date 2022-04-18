@@ -1,36 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
-
+<!--
     <bean class ="com.SpringWorksheet.Emp" name="Emp1">
         <property name = "age" value="25" />
-
-        <property name = "name" value="Gautam" />
-
-        <property name = "address" value="ABC,DELHI,INDIA" />
-
+    <property name = "name" value="Gautam" />
+    <property name = "address" value="ABC,DELHI,INDIA" />
         <property name="number">
             <list>
-                <value>
-                    9999
-                </value>
-                <value>
-                    993
-                </value>
-                <value>
-                    87653
-                </value>
+                <value>9999</value>
+                <value>993</value>
+                <value>87653</value>
+</list>        </property>
+</bean>
+-->
+    <!--
+    <bean class ="com.SpringWorksheet.Emp" name="Emp1" p:age="25" p:name="Gautam" p:address="ABC,DELHI,INDIA"
+    p:number="1212">
 
+    <property name="number">
+        <list>
+            <value>9999</value>
+            <value>993</value>
+            <value>87653</value>
+        </list>        </property>
+
+    </bean>
+    -->
+    <!--
+    <bean class ="com.SpringWorksheet.Empl" name="Emp2">
+      <constructor-arg value="25" />
+
+      <constructor-arg value="AMAN" />
+        <constructor-arg value="ABC.DELHI,INDIA" />
+        <constructor-arg>
+            <list>
+                <value>
+                    53667
+                </value>
+                <value>
+                    7777
+                </value>
+                <value>
+                    5787
+                </value>
             </list>
-        </property>
-
+        </constructor-arg>
 
 
 
     </bean>
+    -->
+    <bean class ="com.SpringWorksheet.Empl" name="Emp2" c:age="24" c:name="DIKSHA" c:address="NEW FOJI COLONY , AMBALA , INDIA" c:number="12312" />
+
 </beans>
+
